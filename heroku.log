@@ -1,65 +1,3 @@
-2013-05-17T04:55:09.474164+00:00 app[web.1]: Processing by PagesController#home as HTML
-2013-05-17T04:55:09.471635+00:00 app[web.1]: Started GET "/" for 80.69.208.53 at 2013-05-17 04:55:09 +0000
-2013-05-17T04:55:09.482760+00:00 app[web.1]: 
-2013-05-17T04:55:09.483059+00:00 app[web.1]:   app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__3940326821913298631_35142300'
-2013-05-17T04:55:09.483059+00:00 app[web.1]: 
-2013-05-17T04:55:09.483059+00:00 app[web.1]: 
-2013-05-17T04:55:48.169238+00:00 heroku[router]: at=info method=GET path=/ host=agile-escarpment-1535.herokuapp.com fwd="80.69.208.53" dyno=web.1 connect=1ms service=18ms status=500 bytes=643
-2013-05-17T04:55:48.158759+00:00 app[web.1]: Processing by PagesController#home as HTML
-2013-05-17T04:55:48.159586+00:00 app[web.1]:   Rendered pages/home.html.erb within layouts/application (0.3ms)
-2013-05-17T04:55:48.160521+00:00 app[web.1]:   Rendered layouts/_stylesheets.html.erb (0.6ms)
-2013-05-17T04:55:48.162084+00:00 app[web.1]: 
-2013-05-17T04:55:48.156062+00:00 app[web.1]: Started GET "/" for 80.69.208.53 at 2013-05-17 04:55:48 +0000
-2013-05-17T04:55:48.160576+00:00 app[web.1]: Completed 500 Internal Server Error in 2ms
-2013-05-17T04:55:48.162084+00:00 app[web.1]:     4: <%= stylesheet_link_tag 'blueprint/screen', :media => 'screen' %>
-2013-05-17T04:55:48.162084+00:00 app[web.1]:     1: <!--[if lt IE 9]>
-2013-05-17T04:55:48.162084+00:00 app[web.1]:     2: <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-2013-05-17T04:55:48.162084+00:00 app[web.1]:     7: <%= stylesheet_link_tag 'custom', :media => 'screen' %>
-2013-05-17T04:55:48.162084+00:00 app[web.1]: ActionView::Template::Error (blueprint/screen.css isn't precompiled):
-2013-05-17T04:55:48.162084+00:00 app[web.1]:     6: <!--[if lt IE 8]><%= stylesheet_link_tag 'blueprint/ie' %><![endif]-->
-2013-05-17T04:55:48.162084+00:00 app[web.1]:     5: <%= stylesheet_link_tag 'blueprint/print',  :media => 'print' %>
-2013-05-17T04:55:48.162084+00:00 app[web.1]:     3: <![endif]-->
-2013-05-17T04:55:48.162084+00:00 app[web.1]:   app/views/layouts/_stylesheets.html.erb:4:in `_app_views_layouts__stylesheets_html_erb___4394092857403578140_32478760'
-2013-05-17T04:55:48.162366+00:00 app[web.1]:   app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__3940326821913298631_35142300'
-2013-05-17T04:55:48.162366+00:00 app[web.1]: 
-2013-05-17T04:55:48.162366+00:00 app[web.1]: 
-2013-05-17T04:57:09.222920+00:00 heroku[router]: at=info method=GET path=/ host=agile-escarpment-1535.herokuapp.com fwd="80.69.208.53" dyno=web.1 connect=3ms service=48ms status=500 bytes=643
-2013-05-17T04:57:09.183432+00:00 app[web.1]: Started GET "/" for 80.69.208.53 at 2013-05-17 04:57:09 +0000
-2013-05-17T04:57:09.188974+00:00 app[web.1]: 
-2013-05-17T04:57:09.186144+00:00 app[web.1]:   Rendered pages/home.html.erb within layouts/application (0.3ms)
-2013-05-17T04:57:09.187212+00:00 app[web.1]:   Rendered layouts/_stylesheets.html.erb (0.6ms)
-2013-05-17T04:57:09.187418+00:00 app[web.1]: Completed 500 Internal Server Error in 2ms
-2013-05-17T04:57:09.188974+00:00 app[web.1]:     6: <!--[if lt IE 8]><%= stylesheet_link_tag 'blueprint/ie' %><![endif]-->
-2013-05-17T04:57:09.188974+00:00 app[web.1]: ActionView::Template::Error (blueprint/screen.css isn't precompiled):
-2013-05-17T04:57:09.188974+00:00 app[web.1]:     2: <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-2013-05-17T04:57:09.188974+00:00 app[web.1]:     3: <![endif]-->
-2013-05-17T04:57:09.188974+00:00 app[web.1]:     4: <%= stylesheet_link_tag 'blueprint/screen', :media => 'screen' %>
-2013-05-17T04:57:09.188974+00:00 app[web.1]:     1: <!--[if lt IE 9]>
-2013-05-17T04:57:09.185310+00:00 app[web.1]: Processing by PagesController#home as HTML
-2013-05-17T04:57:09.188974+00:00 app[web.1]:     5: <%= stylesheet_link_tag 'blueprint/print',  :media => 'print' %>
-2013-05-17T04:57:09.188974+00:00 app[web.1]:   app/views/layouts/_stylesheets.html.erb:4:in `_app_views_layouts__stylesheets_html_erb___4394092857403578140_32478760'
-2013-05-17T04:57:09.188974+00:00 app[web.1]:     7: <%= stylesheet_link_tag 'custom', :media => 'screen' %>
-2013-05-17T04:57:09.189259+00:00 app[web.1]:   app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__3940326821913298631_35142300'
-2013-05-17T04:57:09.189259+00:00 app[web.1]: 
-2013-05-17T04:57:09.189259+00:00 app[web.1]: 
-2013-05-17T04:59:17.171595+00:00 heroku[router]: at=info method=GET path=/ host=agile-escarpment-1535.herokuapp.com fwd="80.69.208.53" dyno=web.1 connect=10ms service=12ms status=500 bytes=643
-2013-05-17T04:59:17.152211+00:00 app[web.1]: Started GET "/" for 80.69.208.53 at 2013-05-17 04:59:17 +0000
-2013-05-17T04:59:17.153975+00:00 app[web.1]: Processing by PagesController#home as HTML
-2013-05-17T04:59:17.154797+00:00 app[web.1]:   Rendered pages/home.html.erb within layouts/application (0.3ms)
-2013-05-17T04:59:17.155712+00:00 app[web.1]:   Rendered layouts/_stylesheets.html.erb (0.6ms)
-2013-05-17T04:59:17.155767+00:00 app[web.1]: Completed 500 Internal Server Error in 2ms
-2013-05-17T04:59:17.157553+00:00 app[web.1]: ActionView::Template::Error (blueprint/screen.css isn't precompiled):
-2013-05-17T04:59:17.157553+00:00 app[web.1]:     3: <![endif]-->
-2013-05-17T04:59:17.157553+00:00 app[web.1]:     4: <%= stylesheet_link_tag 'blueprint/screen', :media => 'screen' %>
-2013-05-17T04:59:17.157553+00:00 app[web.1]:     1: <!--[if lt IE 9]>
-2013-05-17T04:59:17.157553+00:00 app[web.1]: 
-2013-05-17T04:59:17.157840+00:00 app[web.1]:   app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__3940326821913298631_35142300'
-2013-05-17T04:59:17.157553+00:00 app[web.1]:     6: <!--[if lt IE 8]><%= stylesheet_link_tag 'blueprint/ie' %><![endif]-->
-2013-05-17T04:59:17.157553+00:00 app[web.1]:     5: <%= stylesheet_link_tag 'blueprint/print',  :media => 'print' %>
-2013-05-17T04:59:17.157553+00:00 app[web.1]:     7: <%= stylesheet_link_tag 'custom', :media => 'screen' %>
-2013-05-17T04:59:17.157553+00:00 app[web.1]:   app/views/layouts/_stylesheets.html.erb:4:in `_app_views_layouts__stylesheets_html_erb___4394092857403578140_32478760'
-2013-05-17T04:59:17.157553+00:00 app[web.1]:     2: <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-2013-05-17T04:59:17.157840+00:00 app[web.1]: 
 2013-05-17T04:59:17.157840+00:00 app[web.1]: 
 2013-05-17T04:59:21.910626+00:00 heroku[router]: at=info method=GET path=/ host=agile-escarpment-1535.herokuapp.com fwd="80.69.208.53" dyno=web.1 connect=1ms service=12ms status=500 bytes=643
 2013-05-17T04:59:21.904251+00:00 app[web.1]:     4: <%= stylesheet_link_tag 'blueprint/screen', :media => 'screen' %>
@@ -99,3 +37,66 @@
 2013-05-17T05:00:56.761498+00:00 app[web.1]: 
 2013-05-17T05:00:56.761498+00:00 app[web.1]: 
 2013-05-17T05:00:56.770479+00:00 heroku[router]: at=info method=GET path=/ host=agile-escarpment-1535.herokuapp.com fwd="80.69.208.53" dyno=web.1 connect=1ms service=10ms status=500 bytes=643
+2013-05-17T05:11:50.203180+00:00 heroku[slugc]: Slug compilation started
+2013-05-17T05:12:39.122499+00:00 heroku[api]: Deploy 118f73d by ostrauss@groupeomicrone.com
+2013-05-17T05:12:39.158028+00:00 heroku[api]: Release v13 created by ostrauss@groupeomicrone.com
+2013-05-17T05:12:39.204107+00:00 heroku[api]: Deploy 118f73d by ostrauss@groupeomicrone.com
+2013-05-17T05:12:39.495884+00:00 heroku[web.1]: State changed from up to starting
+2013-05-17T05:12:39.598722+00:00 heroku[slugc]: Slug compilation finished
+2013-05-17T05:12:41.561030+00:00 heroku[web.1]: Starting process with command `bundle exec rails server -p 18658`
+2013-05-17T05:12:42.638919+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2013-05-17T05:12:43.380194+00:00 app[web.1]: 	/usr/local/lib/ruby/1.9.1/webrick/server.rb:90:in `select'
+2013-05-17T05:12:43.380194+00:00 app[web.1]: [2013-05-17 05:12:43] ERROR SignalException: SIGTERM
+2013-05-17T05:12:45.730934+00:00 app[web.1]: DEPRECATION WARNING: You have Rails 2.3-style plugins in vendor/plugins! Support for these plugins will be removed in Rails 4.0. Move them out and bundle them in your Gemfile, or fold them in to your app as lib/myplugin/* and config/initializers/myplugin.rb. See the release notes for more on this: http://weblog.rubyonrails.org/2012/1/4/rails-3-2-0-rc2-has-been-released. (called from <top (required)> at /app/config/environment.rb:5)
+2013-05-17T05:12:45.731908+00:00 app[web.1]: DEPRECATION WARNING: You have Rails 2.3-style plugins in vendor/plugins! Support for these plugins will be removed in Rails 4.0. Move them out and bundle them in your Gemfile, or fold them in to your app as lib/myplugin/* and config/initializers/myplugin.rb. See the release notes for more on this: http://weblog.rubyonrails.org/2012/1/4/rails-3-2-0-rc2-has-been-released. (called from <top (required)> at /app/config/environment.rb:5)
+2013-05-17T05:12:51.420288+00:00 app[web.1]: [2013-05-17 05:12:51] INFO  WEBrick 1.3.1
+2013-05-17T05:12:51.420288+00:00 app[web.1]: [2013-05-17 05:12:51] INFO  ruby 1.9.2 (2011-07-09) [x86_64-linux]
+2013-05-17T05:12:51.420571+00:00 app[web.1]: [2013-05-17 05:12:51] INFO  WEBrick::HTTPServer#start: pid=2 port=18658
+2013-05-17T05:12:51.774767+00:00 heroku[web.1]: State changed from starting to up
+2013-05-17T05:12:52.527764+00:00 app[web.1]: => Booting WEBrick
+2013-05-17T05:12:52.527764+00:00 app[web.1]: => Rails 3.2.13 application starting in production on http://0.0.0.0:18658
+2013-05-17T05:12:52.527764+00:00 app[web.1]: => Call with -d to detach
+2013-05-17T05:12:52.527764+00:00 app[web.1]: => Ctrl-C to shutdown server
+2013-05-17T05:12:52.527764+00:00 app[web.1]: Started GET "/" for 80.69.208.53 at 2013-05-17 05:12:52 +0000
+2013-05-17T05:12:53.575245+00:00 heroku[router]: at=info method=GET path=/ host=agile-escarpment-1535.herokuapp.com fwd="80.69.208.53" dyno=web.1 connect=5ms service=1075ms status=500 bytes=643
+2013-05-17T05:12:53.549175+00:00 heroku[web.1]: Stopping remaining processes with SIGKILL
+2013-05-17T05:12:53.548971+00:00 heroku[web.1]: Error R12 (Exit timeout) -> At least one process failed to exit within 10 seconds of SIGTERM
+2013-05-17T05:12:53.264276+00:00 app[web.1]: Connecting to database specified by DATABASE_URL
+2013-05-17T05:12:53.529309+00:00 app[web.1]:   Rendered pages/home.html.erb within layouts/application (8.9ms)
+2013-05-17T05:12:53.573034+00:00 app[web.1]:   Rendered layouts/_stylesheets.html.erb (36.5ms)
+2013-05-17T05:12:53.573034+00:00 app[web.1]: Completed 500 Internal Server Error in 101ms
+2013-05-17T05:12:53.574952+00:00 app[web.1]: 
+2013-05-17T05:12:53.574952+00:00 app[web.1]: ActionView::Template::Error (blueprint/screen.css isn't precompiled):
+2013-05-17T05:12:53.574952+00:00 app[web.1]:     1: <!--[if lt IE 9]>
+2013-05-17T05:12:53.574952+00:00 app[web.1]:     2: <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+2013-05-17T05:12:53.574952+00:00 app[web.1]:     3: <![endif]-->
+2013-05-17T05:12:53.574952+00:00 app[web.1]:     4: <%= stylesheet_lin
+k_tag 'blueprint/screen', :media => 'screen' %>
+2013-05-17T05:12:53.574952+00:00 app[web.1]:     5: <%= stylesheet_link_tag 'blueprint/print',  :media => 'print' %>
+2013-05-17T05:12:53.574952+00:00 app[web.1]:     6: <!--[if lt IE 8]><%= stylesheet_link_tag 'blueprint/ie' %><![endif]-->
+2013-05-17T05:12:53.574952+00:00 app[web.1]:     7: <%= stylesheet_link_tag 'Custom', :media => 'screen' %>
+2013-05-17T05:12:53.574952+00:00 app[web.1]:   app/views/layouts/_stylesheets.html.erb:4:in `_app_views_layouts__stylesheets_html_erb___495041605188375965_22101720'
+2013-05-17T05:12:53.575295+00:00 app[web.1]:   app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__250204673761163125_25806560'
+2013-05-17T05:12:53.575295+00:00 app[web.1]: 
+2013-05-17T05:12:53.575295+00:00 app[web.1]: 
+2013-05-17T05:12:53.472192+00:00 app[web.1]: Processing by PagesController#home as HTML
+2013-05-17T05:12:56.179679+00:00 heroku[web.1]: Process exited with status 137
+2013-05-17T05:13:09.094016+00:00 heroku[router]: at=info method=GET path=/ host=agile-escarpment-1535.herokuapp.com fwd="80.69.208.53" dyno=web.1 connect=2ms service=12ms status=500 bytes=643
+2013-05-17T05:13:09.091597+00:00 app[web.1]:   Rendered pages/home.html.erb within layouts/application (0.3ms)
+2013-05-17T05:13:09.087754+00:00 app[web.1]: Started GET "/" for 80.69.208.53 at 2013-05-17 05:13:09 +0000
+2013-05-17T05:13:09.090718+00:00 app[web.1]: Processing by PagesController#home as HTML
+2013-05-17T05:13:09.092604+00:00 app[web.1]:   Rendered layouts/_stylesheets.html.erb (0.6ms)
+2013-05-17T05:13:09.092794+00:00 app[web.1]: Completed 500 Internal Server Error in 2ms
+2013-05-17T05:13:09.095041+00:00 app[web.1]: 
+2013-05-17T05:13:09.095041+00:00 app[web.1]: ActionView::Template::Error (blueprint/screen.css isn't precompiled):
+2013-05-17T05:13:09.095041+00:00 app[web.1]:     1: <!--[if lt IE 9]>
+2013-05-17T05:13:09.095041+00:00 app[web.1]:     2: <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+2013-05-17T05:13:09.095041+00:00 app[web.1]:     3: <![endif]-->
+2013-05-17T05:13:09.095041+00:00 app[web.1]:     4: <%= stylesheet_link_tag 'blueprint/screen', :media => 'screen' %>
+2013-05-17T05:13:09.095041+00:00 app[web.1]:     5: <%= stylesheet_link_tag 'blueprint/print',  :media => 'print' %>
+2013-05-17T05:13:09.095041+00:00 app[web.1]:     6: <!--[if lt IE 8]><%= stylesheet_link_tag 'blueprint/ie' %><![endif]-->
+2013-05-17T05:13:09.095319+00:00 app[web.1]: 
+2013-05-17T05:13:09.095041+00:00 app[web.1]:   app/views/layouts/_stylesheets.html.erb:4:in `_app_views_layouts__stylesheets_html_erb___495041605188375965_22101720'
+2013-05-17T05:13:09.095041+00:00 app[web.1]:     7: <%= stylesheet_link_tag 'Custom', :media => 'screen' %>
+2013-05-17T05:13:09.095319+00:00 app[web.1]:   app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__250204673761163125_25806560'
+2013-05-17T05:13:09.095319+00:00 app[web.1]: 
