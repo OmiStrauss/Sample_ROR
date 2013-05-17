@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.13'
 gem "pg", :group => :production
+gem 'gravatar_image_tag'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
@@ -24,4 +25,5 @@ group :test do
   gem 'spork'
   gem 'sqlite3'
   gem 'sqlite3-ruby', '1.3.2', :require => 'sqlite3'
+  gem 'factory_girl_rails', '1.0'
 end
