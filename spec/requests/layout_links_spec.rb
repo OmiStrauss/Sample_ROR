@@ -53,6 +53,7 @@ describe "LayoutLinks" do
 
     before(:each) do
       @user = Factory(:user)
+	  # integration_sign_in @user
       visit signin_path
       fill_in :email,    :with => @user.email
       fill_in "Mot de passe", :with => @user.password
@@ -65,7 +66,7 @@ describe "LayoutLinks" do
                                          :content => "Déconnexion")
     end
 
-    it "devrait avoir un lien vers le profil"  do
+    it "devrait avoir un lien vers le profil2"  do
       visit root_path
       response.should have_selector("a", :href => user_path(@user),
                                          :content => "Profil")
